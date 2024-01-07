@@ -8,6 +8,13 @@
 public class HelloWorld {
     public static void main(String[] args){
         System.out.println("Hello, World!");
+
+        // Creating a new Cat object with the 'new' keyword and the contructor
+        CatTwo myCat = new CatTwo("orange", "elated");
+
+        // Accessing  the public methods of the Cat class
+        System.out.println("The cat is " + myCat.getColor() + " and feels " + myCat.getMood());
+        myCat.makeHappy(); // Makes the cat  happy which internally changes its mood and make it purr
     }
 }
 
@@ -17,23 +24,3 @@ public class HelloWorld {
    
    */
 
-// Understanding Java Syntax
-
-/*
-    Objects and Classes in  Java
-*/
-
-class Cat {
-    String color;
-    String mood;
-
-    void purr(){
-        System.out.println("Cat purrs");
-    }
-}
-   // If we instantiate a new Cat object, we bring an instance of the Cat class into memory
-   // By instantiating a new Cat object, we essentially encapsulate the cat's properties and the actions it can perform within  one cohesive unit
-
-/*
-    Contructors
-*/
