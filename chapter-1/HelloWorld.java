@@ -15,6 +15,16 @@ public class HelloWorld {
         // Accessing  the public methods of the Cat class
         System.out.println("The cat is " + myCat.getColor() + " and feels " + myCat.getMood());
         myCat.makeHappy(); // Makes the cat  happy which internally changes its mood and make it purr
+
+        // Creating a new CatThree object
+        CatThree tabby = new CatThree();
+
+        // Calling the public methods of the Cat class
+        tabby.meow(); // Output: Meow!
+        tabby.scratch(); // Output: Scratch!
+
+        // Demonstrating the reusability of methods
+        tabby.displayBehavior(); // Calls multiple methods to display behaviors
     }
 }
 
